@@ -22,3 +22,16 @@ while l < 10: #перебираем значения до x=10
     if np.abs(1/l+4*l) <= max_y1:
         break
     l += 10**(-6) #увеличиваем l
+
+x = np.linspace(l, 10, 1000) #установим ограничение для x и кол-во точек  
+plt.figure(figsize=(15, 4)) #создаем новое окно для графика 15х4 дюйма
+matplotlib.rcParams.update({'font.size': 15})#размер шрифта
+plt.plot(x, 2*x**3+3*x**2-5, label="y1(x)") #построим график 1-ой функции
+plt.plot(x, 1/x+4*x, label="y2(x)") #построим график 2-ой функции
+plt.xlabel("x", fontsize=15) #название для оси абсцисс
+plt.ylabel("y1, y2", fontsize=15) #название для оси ординат
+plt.title(f"Графики функций y1 и y2 от {l:.6f} до 10", fontsize=15) #название таблицы
+plt.grid(which='major') #включаем основную сетку
+plt.grid(which='minor', linestyle=':') #включаем дополнительную сетку
+plt.legend(loc='best') #размещение легенды в наилучшем месте
+plt.show() #вывод графиков и системы координат
