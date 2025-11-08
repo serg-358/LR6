@@ -117,59 +117,61 @@
 
 Лог команд в Git Bash:
 
--`git clone https://github.com/serg-358/LR6.git`
--`cd LR6`
--`git pull origin master`
--`git fetch upstream`
--`git checkout -b branch1 upstream/branch1`
--`git push origin branch1`
--`git checkout master`
--`git log origin/branch1`
--`git log origin/master`
--`git checkout branch1`
--`git log --oneline`
--`git show`
--`git checkout master`
--`git log --oneline`
--`git show`
--`git diff master..branch1`
--`git merge branch1`
--`git status`
--`nano mergefile.txt`
--`git add mergefile.txt`
--`git commit -m "Разрешение конфликта, слияние веток"`
--`git merge branch1`
--`git branch -d branch1`
--`git branch`
--`nano график.py`
--`git add график.py`
--`git commit -m "Внесено первое изменение в файл"`
--`nano график.py`
--`git add график.py`
--`git commit -m "Внесено второе изменение в файл"`
--`git log --oneline -5`
--`git revert 413a960`
--`git status`
--`git push origin master`
--`git commit -m "Текущие изменения"`
--`git checkout -b report`
--`mrdir Скриншоты`
--`ls`
--`git push origin report`
--`git status`
--`git add Скриншоты/`
--`git status`
--`git commit -m "Скриншоты добавлены в отдельную папку"`
--`git push origin report`
--`git add Скриншоты/`
--`git commit -m "Добавлены два скрина"`
--`git pull origin report`
--`git push origin report`
--`git log --pretty=format:"%h %ad %an: %s" --date=short -30`
--`git add Скриншоты/`
--`git commit -m "История операций в форматированном виде"`
--`git pull origin report`
--`git push origin report`
+```
+git clone https://github.com/serg-358/LR6.git
+cd LR6
+git pull origin master
+git fetch upstream
+git checkout -b branch1 upstream/branch1
+git push origin branch1
+git checkout master
+git log origin/branch1
+git log origin/master
+git checkout branch1
+git log --oneline
+git show
+git checkout master
+git log --oneline
+git show
+git diff master..branch1
+git merge branch1
+git status
+nano mergefile.txt
+git add mergefile.txt
+git commit -m "Разрешение конфликта, слияние веток"
+git merge branch1
+git branch -d branch1
+git branch
+nano график.py
+git add график.py
+git commit -m "Внесено первое изменение в файл"
+nano график.py
+git add график.py
+git commit -m "Внесено второе изменение в файл"
+git log --oneline -5
+git revert 413a960
+git status
+git push origin master
+git commit -m "Текущие изменения"
+git checkout -b report
+mrdir Скриншоты
+ls
+git push origin report
+git status
+git add Скриншоты/
+git status
+git commit -m "Скриншоты добавлены в отдельную папку"
+git push origin report
+git add Скриншоты/
+git commit -m "Добавлены два скрина"
+git pull origin report
+git push origin report
+git log --pretty=format:"%h %ad %an: %s" --date=short -30
+git add Скриншоты/
+git commit -m "История операций в форматированном виде"
+git pull origin report
+git push origin report
+```
 
 Шаг 15: Получить историю операций в форматированном виде (рис. 21)
 
